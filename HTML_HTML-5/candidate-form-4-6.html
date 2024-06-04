@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      form {
+        width: fit-content;
+        margin: 50px auto;
+        padding: 10px;
+        background-color: rgba(112, 128, 144, 0.283);
+        border-radius: 12px;
+        color: #24252e;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+      }
+      fieldset {
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name*</label>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter your name"
+          required
+          minlength="3"
+          maxlength="20"
+        />
+        <br />
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><label for="phone">Phone Number*</label>
+        <input
+          type="tel"
+          name=""
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+          minlength="10"
+          maxlength="10"
+        />
+        <br />
+        <label for="dob">Date of Birth*</label>
+        <input type="date" name="" id="dob" required />
+        <br />
+        Gender*: <label for="male">Male</label
+        ><input type="radio" name="gender" id="male" required />
+        <label for="female">Female</label
+        ><input type="radio" name="gender" id="female" required /> <br />
+        <label for="city">City*</label>
+        <select name="" id="city">
+          <option value="">Ahmedabad</option>
+          <option value="" selected>Rajkot</option>
+          <option value="">Surat</option>
+          <option value="">Baroda</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Professional Information</legend>
+        <label for="collage">Collage*</label>
+        <input
+          type="text"
+          name=""
+          id="collage"
+          placeholder="Enter your collage name"
+          required
+          list="collage-list"
+        />
+        <datalist id="collage-list">
+          <option value="Marwadi">Marwadi university</option>
+          <option value="Saurastra">Saurastra university</option>
+          <option value="Atmiya">Atmiya university</option>
+          <option value="RK">RK university</option>
+          <option value="GTU">GTU university</option>
+        </datalist>
+        <br /><label for="course">Course*</label>
+        <input
+          type="text"
+          name=""
+          id="course"
+          placeholder="Enter your course name"
+          required
+        />
+        <br /><label for="course">CGPA*</label>
+        <input
+          type="number"
+          name=""
+          id="cgpa"
+          placeholder="Enter your CGPA"
+          required
+        />
+
+        <br /><label for="reference">Reference</label>
+        <input type="text" name="" id="" placeholder="Enter reference name" />
+        <br /><label for="post">Previous Designation</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your previous Designation"
+        />
+        <br /><label for="exp-years">Years of Experience</label>
+        <input type="number" placeholder="Enter your years of experience" />
+        <br />
+        <label for="resume">Resume*</label>
+        <input type="file" name="" id="resume" accept="pdf" />
+      </fieldset>
+      <button>Submit</button>
+      <input type="reset" name="" id="" />
+    </form>
+  </body>
+</html>

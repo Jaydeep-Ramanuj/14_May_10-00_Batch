@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(0, 0, 0, 0.555);
+      }
+      .card {
+        width: 300px;
+        border-radius: 24px;
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .top-area {
+        background-color: #588fe5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        padding: 30px;
+      }
+      .logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .logo img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .content {
+        padding: 10px;
+        text-align: center;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+      }
+
+      .icon-list {
+        margin: 5px;
+        margin-top: 10px;
+      }
+      .icon-list i {
+        margin-left: 10px;
+        font-size: 24px;
+      }
+      button {
+        border: none;
+        padding: 8px 16px;
+        border-radius: 24px;
+        background-color: #3d76fc9f;
+        color: rgba(0, 0, 255, 0.626);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-area">
+        <div class="logo">
+          <img
+            src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="content">
+        <h2>Geeks for Geeks</h2>
+        <h4>@geek_for-geeks</h4>
+        <div class="icon-list">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+        <button>Message</button>
+      </div>
+    </div>
+  </body>
+</html>
