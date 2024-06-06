@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button onfocus="console.log('Btn Focused')">Focus me</button>
+    <div class="box"></div>
+    <button onclick="console.log('Btn Clicked')">Click me</button>
+    <button ondblclick="console.log('Btn double Clicked')">
+      Double Click me
+    </button>
+    <button onmouseover="console.log('Btn Mouse over')">Hover me</button>
+
+    <form action="">
+      <input type="email" oninvalid="console.log('email invalid')" />
+      <button>Submit</button>
+    </form>
+
+    <button id="btn">Event from js</button>
+
+    <script>
+      const btn = document.getElementById('btn');
+
+      btn.addEventListener('click', () => {
+        console.log('Button clicked');
+        btn.style.backgroundColor = 'red';
+      });
+    </script>
+  </body>
+</html>
