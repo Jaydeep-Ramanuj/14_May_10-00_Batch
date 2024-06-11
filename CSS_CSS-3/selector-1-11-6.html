@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* tag name selector */
+      p {
+        color: red;
+      }
+
+      /* group selector */
+      i,
+      u,
+      b {
+        color: yellowgreen;
+      }
+      /* class selector */
+      .green {
+        font-size: 20px;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      /* id selector */
+      #box {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <i class="green bold">This is i tag</i>
+    <b class="green">This is b tag</b>
+    <u class="green" id="box">This is u tag</u>
+  </body>
+</html>

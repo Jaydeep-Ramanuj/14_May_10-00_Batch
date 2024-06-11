@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #me {
+        background-color: lightgray;
+      }
+
+      /* tag name selector */
+      p {
+        color: red;
+      }
+
+      /* group selector */
+      i,
+      u,
+      b {
+        color: yellowgreen;
+      }
+
+      /* class selector */
+      .green {
+        color: green;
+        font-size: 20px;
+      }
+      .green {
+        color: turquoise;
+        background-color: violet;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      /* id selector */
+      #box {
+        border: 1px solid red;
+      }
+      i {
+        color: tomato;
+        background-color: yellow !important;
+      }
+
+      div.some.some.some {
+        color: red;
+      }
+      div.some.some {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <i class="green bold" id="me" style="background-color: salmon"
+      >This is i tag</i
+    >
+    <b class="green">This is b tag</b>
+    <u class="green" id="box">This is u tag</u>
+    <div class="some else">This is div tag</div>
+  </body>
+</html>
+
+<!-- universal < tag < class < id < inline style < !important -->
