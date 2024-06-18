@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* combinator selector */
+      div#thing.some.else {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is div tag</div>
+    <div class="some else" id="thing">This is div tag with 'some' class</div>
+    <p class="some">This is p tag with 'some' and 'else' class</p>
+
+    <div class="else" id="thing">This is div tag with else class</div>
+  </body>
+</html>
+
+<!-- universal (*) -->
+<!-- tags selector (p,div) -->
+<!-- class selector (.class-name) -->
+<!-- id selector (#id-name) -->
+<!-- group selector (div,.some, #thing) -->
+<!-- child selector (.parent > .child) -->
+<!-- descendant selector (.parent .child) -->
+<!-- combinator selector (div.parent) -->
+<!-- adjacent sibling selector (#some + .sub-child) -->
+<!-- general sibling selector (#some ~ .sub-child) -->
