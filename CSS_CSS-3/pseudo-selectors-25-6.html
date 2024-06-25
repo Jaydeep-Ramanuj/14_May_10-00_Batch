@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: bisque;
+        border-radius: 8px;
+        margin: 50px auto;
+        transition: all 300ms;
+      }
+
+      .inner-box {
+        height: 100px;
+        width: 100px;
+        background-color: tomato;
+        border-radius: 8px;
+        /* display: none; */
+        opacity: 0;
+        transition: all 900ms;
+      }
+      .box:hover {
+        /* width: 300px; */
+        /* background-color: red; */
+      }
+
+      .box:hover .inner-box {
+        /* display: block; */
+        opacity: 1;
+      }
+      button {
+        margin: 50px;
+      }
+
+      button:hover {
+        background-color: green;
+      }
+
+      button:focus {
+        background-color: turquoise;
+      }
+
+      input:focus {
+        background-color: tomato;
+      }
+
+      #check:checked {
+        outline: 5px solid red;
+      }
+
+      .box:focus-within {
+        background-color: violet;
+      }
+
+      a:active {
+        color: yellowgreen;
+      }
+      a:visited {
+        color: tomato;
+      }
+
+      .box::before {
+        content: '--';
+        height: 100px;
+        width: 100px;
+        background-color: turquoise;
+      }
+      .box::after {
+        content: '\00A9';
+        height: 100px;
+        width: 100px;
+        background-color: turquoise;
+      }
+
+      li {
+        list-style: none;
+      }
+      li::before {
+        content: '\21DB';
+        color: red;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box some">
+      <div class="inner-box"></div>
+    </div>
+    <button>Click me</button>
+
+    <input type="text" name="" id="" />
+    <input type="checkbox" name="" id="check" />
+
+    <a href="#">Go here</a>
+
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+      <li>Item5</li>
+      <li>Item6</li>
+      <li>Item7</li>
+    </ul>
+  </body>
+</html>
