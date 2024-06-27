@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 500px;
+        padding: 20px;
+        background-color: bisque;
+      }
+
+      .child {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 8px;
+        width: fit-content;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        background-color: yellowgreen;
+      }
+
+      /* selects elements with provided attribute */
+      /* .child[data-attr] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute with given attribute value*/
+      /* .child[data-attr='shyam'] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute which has space separated value */
+      /* .child[data-attr~='shyam'] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute which has comma separated value */
+      /* .child[data-attr|='shyam'] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute whose starting with provided value */
+      /* .child[data-attr^='sh'] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute whose ending with provided value */
+      /* .child[data-attr$='ram'] {
+        background-color: tomato;
+      } */
+
+      /* selects elements with provided attribute which includes provided value */
+      .child[data-attr*='shya'] {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">No value</div>
+      <div class="child" data-attr="shyam">shyam</div>
+      <div class="child" data-attr="shyaaaaam">shyaaaaam</div>
+      <div class="child" data-attr="shyam am">shyam am</div>
+      <div class="child" data-attr="shyabcam">shyabcam</div>
+      <div class="child" data-attr="shy-am">shy-am</div>
+      <div class="child" data-attr="shyam-am">shyam-am</div>
+      <div class="child" data-attr="ramshyam">ramshyam</div>
+      <div class="child" data-attr="shyamram">shyamram</div>
+      <div class="child" data-attr="ram">ram</div>
+      <div class="child" data-attr="shym">shym</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 500px;
+        background-color: bisque;
+        padding: 20px;
+        margin: 50px auto;
+      }
+
+      .child {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: yellowgreen;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* .child:first-child {
+        background-color: tomato;
+      } */
+      /* .child:last-child {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(3) {
+        background-color: tomato;
+      } */
+      /* .child:nth-last-child(3) {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(3n) {
+        background-color: tomato;
+      } */
+      /* .child:nth-last-child(3n) {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(3n + 2) {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(3n - 2) {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(n + 3) {
+        background-color: tomato;
+      } */
+      /* .child:nth-child(odd) {
+        background-color: tomato;
+      } */
+      .child:nth-child(even) {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+      <div class="child">Child3</div>
+      <div class="child">Child4</div>
+      <div class="child">Child5</div>
+      <div class="child">Child6</div>
+      <div class="child">Child7</div>
+      <div class="child">Child8</div>
+      <div class="child">Child9</div>
+      <div class="child">Child10</div>
+    </div>
+  </body>
+</html>
