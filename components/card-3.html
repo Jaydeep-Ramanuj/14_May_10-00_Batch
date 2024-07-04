@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        max-width: 350px;
+        border-radius: 24px;
+        background-color: lightgray;
+        margin: 50px auto;
+      }
+      .card > img {
+        width: 100%;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+      }
+
+      .card .content {
+        padding: 10px;
+      }
+
+      .content .pill {
+        padding: 3px 8px;
+        background-color: lightslategray;
+        border-radius: 24px;
+        color: white;
+      }
+
+      .content .title {
+        margin-top: 10px;
+        color: rgb(31, 31, 31);
+      }
+
+      .content .desc {
+        margin-top: 10px;
+        color: rgba(67, 66, 66, 0.84);
+      }
+      .profile {
+        margin-top: 15px;
+      }
+      .avatar {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .profile-info {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <div class="content">
+        <div class="categories">
+          <span class="pill">Technology</span>
+          <span class="pill">Technology</span>
+          <span class="pill">Technology</span>
+        </div>
+        <h2 class="title">What's new in tech 2024</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          quia eum, labore veniam quam optio.
+        </p>
+        <div class="profile">
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+            class="avatar"
+          />
+          <div class="profile-info">
+            <h4>Someone</h4>
+            <h5>2 hour ago</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
