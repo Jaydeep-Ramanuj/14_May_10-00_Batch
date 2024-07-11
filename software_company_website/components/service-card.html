@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+
+      :root {
+        --primary-bg-color: #fefefe;
+        --secondary-bg-color: #f8f7fe;
+        --primary-text-color: #323849;
+        --secondary-text-color: #5d6377;
+        --highlight-color: #5a007b;
+        --primary-gradient: linear-gradient(to right, #81007a, #ce4c7e);
+
+        --primary-padding: 0px 100px;
+        --section-gap: 100px;
+      }
+
+      .service-card {
+        max-width: 350px;
+        min-width: 300px;
+        padding: 20px 10px;
+        border-radius: 8px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 300ms;
+        margin: 50px auto;
+        border: 1px solid transparent;
+      }
+
+      .service-card .icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 1px solid #9a247c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .service-card h3 {
+        margin-top: 15px;
+        transition: all 300ms;
+        color: var(--primary-text-color);
+      }
+      .service-card p {
+        margin-top: 15px;
+        color: var(--secondary-text-color);
+      }
+
+      .service-card:hover {
+        border: 1px solid #9a247c;
+        transform: translateY(20px);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      }
+
+      .service-card:hover h3 {
+        color: var(--highlight-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="service-card">
+      <div class="icon">
+        <img src="../images/Code_perspective_matte.png" alt="" />
+      </div>
+      <h3>Web Design & Development</h3>
+      <p>
+        A Website is an extension of yourself and we can help you to express it
+        properly. Your website is your number one marketing asset because we
+        live in a digital age.
+      </p>
+    </div>
+  </body>
+</html>

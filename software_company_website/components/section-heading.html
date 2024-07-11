@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+
+      :root {
+        --primary-bg-color: #fefefe;
+        --secondary-bg-color: #f8f7fe;
+        --primary-text-color: #323849;
+        --secondary-text-color: #5d6377;
+        --highlight-color: #5a007b;
+        --primary-gradient: linear-gradient(to right, #81007a, #ce4c7e);
+
+        --primary-padding: 0px 100px;
+        --section-gap: 100px;
+      }
+
+      .section-heading {
+        padding: 20px;
+        color: var(--primary-text-color);
+        position: relative;
+      }
+      .section-heading::before {
+        content: '';
+        height: 5px;
+        width: 100px;
+        background-image: var(--primary-gradient);
+        position: absolute;
+        top: 0px;
+        left: 20px;
+      }
+      .section-heading .top-heading {
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-heading">
+      <h2 class="top-heading">Meet the people</h2>
+      <h2 class="heading">We are Working With</h2>
+    </div>
+  </body>
+</html>
