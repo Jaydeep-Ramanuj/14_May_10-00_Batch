@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    :root {
+      --primary-bg-color: #fefefe;
+      --secondary-bg-color: #f8f7fe;
+      --primary-text-color: #323849;
+      --secondary-text-color: #5d6377;
+      --highlight-color: #5a007b;
+      --primary-gradient: linear-gradient(to right, #81007a, #ce4c7e);
+
+      --primary-padding: 0px 100px;
+      --section-gap: 100px;
+    }
+
+    .approach-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 50px auto;
+      gap: 20px;
+    }
+
+    .approach-cards .approach-card {
+      padding: 15px;
+      max-width: 390px;
+      max-height: 200px;
+      display: flex;
+      justify-content: right;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .approach-cards .approach-card .icon-image {
+      height: 50px;
+      width: 50px;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+    }
+    .approach-cards .card1 .icon-image {
+      background-color: black;
+    }
+    .approach-cards .card2 .icon-image {
+      background-color: lightblue;
+    }
+    .approach-cards .card3 .icon-image {
+      background-color: rgb(251, 126, 147);
+    }
+    .approach-cards .card4 .icon-image {
+      background-color: rgb(107, 234, 227);
+    }
+    .approach-cards .card5 .icon-image {
+      background-color: orange;
+    }
+    .approach-cards .card6 .icon-image {
+      background-color: purple;
+    }
+    .approach-cards .approach-card .icon-image img {
+      height: 30px;
+    }
+    .approach-card .card-info {
+      margin-left: 20px;
+    }
+    .approach-card h5 {
+      font-size: 18px;
+      color: var(--primary-text-color);
+    }
+    .approach-card p {
+      color: var(--secondary-text-color);
+      margin: 10px 0px;
+    }
+  </style>
+  <body>
+    <div class="approach-cards">
+      <div class="approach-card card1">
+        <div class="icon-image">
+          <img src="..\images\Rocket_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>UX Driven Engineering</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: black">UX first</span> development company.
+            Projects are driven by designers and they make sure design and
+            experiences translate to code.
+          </p>
+        </div>
+      </div>
+
+      <div class="approach-card card2">
+        <div class="icon-image">
+          <img src="..\images\Code_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>Developing Shared Understanding</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: lightblue">UX first</span> development company.
+            Projects are driven by designers and they make sure design and
+            experiences translate to code.
+          </p>
+        </div>
+      </div>
+
+      <div class="approach-card card3">
+        <div class="icon-image">
+          <img src="..\images\Heart_rate_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>Proven Experience and Expertise</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: lightpink">UX first</span> development company.
+            Projects are driven by designers and they make sure design and
+            experiences translate to code.
+          </p>
+        </div>
+      </div>
+
+      <div class="approach-card card4">
+        <div class="icon-image">
+          <img src="..\images\Shield_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>Security & Intellectual Property (IP)</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: rgb(107, 234, 227)">UX first</span> development
+            company. Projects are driven by designers and they make sure design
+            and experiences translate to code.
+          </p>
+        </div>
+      </div>
+
+      <div class="approach-card card5">
+        <div class="icon-image">
+          <img src="..\images\Success_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>Code Reviews</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: orange">UX first</span> development company.
+            Projects are driven by designers and they make sure design and
+            experiences translate to code.
+          </p>
+        </div>
+      </div>
+
+      <div class="approach-card card6">
+        <div class="icon-image">
+          <img src="..\images\Padlock_perspective_matte.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>Quality Assurance & Testing</h5>
+          <p>
+            Unlike other companies, we are a
+            <span style="color: purple">UX first</span> development company.
+            Projects are driven by designers and they make sure design and
+            experiences translate to code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

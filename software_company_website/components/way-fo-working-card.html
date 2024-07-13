@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+      :root {
+        --primary-bg-color: #fefefe;
+        --secondary-bg-color: #f8f7fe;
+        --primary-text-color: #323849;
+        --secondary-text-color: #5d6377;
+        --highlight-color: #5a007b;
+        --primary-gradient: linear-gradient(to right, #81007a, #ce4c7e);
+
+        --primary-padding: 0px 100px;
+        --section-gap: 100px;
+      }
+      .way-of-working-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 870px;
+        padding: 20px;
+        margin: auto;
+        border: transparent;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 30px;
+        transition: all 300ms;
+        position: relative;
+      }
+
+      .content {
+        height: fit-content;
+        width: 500px;
+        border: transparent;
+      }
+      .content h3 {
+        margin-bottom: 20px;
+      }
+      .content > p:nth-child(2) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: rgb(66, 58, 58);
+      }
+      .content > p:nth-child(3) {
+        margin-bottom: 20px;
+        color: rgb(66, 58, 58);
+      }
+      .content > p:nth-child(3) span {
+        background-clip: text;
+        color: transparent;
+        background-image: var(--primary-gradient);
+      }
+      .content q {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-image: var(--primary-gradient);
+        position: relative;
+        background-clip: text;
+        color: transparent;
+      }
+      .content .avatar {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .content .avatar .img2 img {
+        height: 70px;
+        width: 70px;
+      }
+      .content .avatar .info {
+        font-weight: 400;
+        margin-left: 5px;
+      }
+      .content .avatar .info .username {
+        color: black;
+      }
+      .content .avatar .info .desc {
+        color: var(--secondary-text-color);
+      }
+
+      .way-of-working-card > img {
+        height: 300px;
+        width: 300px;
+      }
+      .way-of-working-card .content q::before {
+        content: '';
+        width: 3px;
+        height: 35px;
+        background-color: rgb(233, 105, 180);
+        position: absolute;
+        top: 0;
+        border-radius: 20px;
+        left: -10px;
+      }
+      .way-of-working-card:hover .content q {
+        height: 100%;
+      }
+      .way-of-working-card:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        scale: 1.1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="way-of-working-card">
+      <div class="content">
+        <h3>Build the right team to scale</h3>
+        <p>
+          Finding the right talent is not easy. We help you find the talent that
+          suits your needs, follows your processes, and sticks with you long
+          term not the case with freelancers
+        </p>
+        <p>
+          Our <span>delivery model</span> helps you cut costs and deliver within
+          budget.
+        </p>
+        <q>
+          Simform is quick to identify larger problem with the Software so we
+          decided to expand our scope to build new modules
+        </q>
+
+        <div class="avatar">
+          <div class="img2">
+            <img src="../images/Ellipse 1 (1).png" alt="" />
+          </div>
+          <div class="info">
+            <p class="username">jeewa markram</p>
+            <p class="desc">CEO</p>
+          </div>
+        </div>
+      </div>
+      <img src="..\Images\Rectangle 19.png" alt="" />
+    </div>
+  </body>
+</html>

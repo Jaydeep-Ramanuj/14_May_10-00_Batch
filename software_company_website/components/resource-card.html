@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Resource Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+
+      :root {
+        --primary-bg-color: #fefefe;
+        --secondary-bg-color: #f8f7fe;
+        --primary-text-color: #323849;
+        --secondary-text-color: #5d6377;
+        --highlight-color: #5a007b;
+        --primary-gradient: linear-gradient(to right, #81007a, #ce4c7e);
+
+        --primary-padding: 0px 100px;
+        --section-gap: 100px;
+      }
+
+      .resource-card {
+        max-width: 230px;
+        min-width: 230px;
+        padding: 20px 8px;
+        border-radius: 8px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 50px auto;
+        border: 1px solid transparent;
+      }
+
+      .resource-card img {
+        width: 100%;
+        height: 140px;
+      }
+
+      .resource-card p {
+        margin-top: 15px;
+        color: var(--secondary-text-color);
+        margin-bottom: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: small;
+      }
+
+      .resource-card a {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-decoration: none;
+        color: #8203b0;
+        font-size: small;
+        font-weight: 600;
+        gap: 10px;
+      }
+
+      .resource-card span {
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resource-card">
+      <img src="../images/Rectangle 10 (2).png" alt="" />
+      <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+      <a href="#">Read More <span> &#10143; </span></a>
+    </div>
+  </body>
+</html>
