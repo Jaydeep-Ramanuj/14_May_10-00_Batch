@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        padding: 50px;
+        margin: 50px;
+        border: 1px solid black;
+        border-radius: 12px;
+      }
+      .ball {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: tomato;
+        /* transition: background-color 300ms 600ms linear, transform 1200ms; */
+
+        transition-property: transform;
+        transition-duration: 1500ms;
+        transition-delay: 300ms;
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-timing-function: cubic-bezier(0.88, 1.57, 0, -0.04);
+      }
+      .wrapper:hover .ball {
+        transform: translate(1000px);
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
