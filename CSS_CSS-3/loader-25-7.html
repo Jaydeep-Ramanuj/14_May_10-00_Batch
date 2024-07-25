@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        width: fit-content;
+        margin: 200px auto;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .bar {
+        height: 20px;
+        width: 10px;
+        background-color: #3ba7ff;
+        animation-name: loader, colors;
+        animation-duration: 1200ms, 1200ms;
+        animation-iteration-count: infinite, infinite;
+        animation-direction: alternate, alternate;
+        animation-timing-function: linear, linear;
+      }
+
+      @keyframes loader {
+        from {
+          transform: scaleY(1);
+        }
+        to {
+          transform: scaleY(5);
+        }
+      }
+
+      @keyframes colors {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+      .bar:nth-child(1) {
+        animation-delay: 300ms;
+      }
+      .bar:nth-child(2) {
+        animation-delay: 600ms;
+      }
+      .bar:nth-child(3) {
+        animation-delay: 900ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </body>
+</html>

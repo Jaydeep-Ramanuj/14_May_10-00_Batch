@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: 100px auto;
+        /* position: relative; */
+        /* background-color: red; */
+        background: radial-gradient(farthest-side, #474bff 94%, #0000) top/9px
+            9px no-repeat,
+          conic-gradient(#0000 30%, #474bff);
+        -webkit-mask: radial-gradient(
+          farthest-side,
+          #0000 calc(100% - 9px),
+          #000 0
+        );
+        animation-name: rotate;
+        animation-duration: 1200ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      /* .loader::before {
+        content: '';
+        height: 5px;
+        border-radius: 12px;
+        width: 100%;
+        background-image: linear-gradient(to right, transparent, #6a4bde);
+        position: absolute;
+        left: 0;
+        top: 0;
+      } */
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

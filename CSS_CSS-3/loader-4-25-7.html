@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        height: 300px;
+        width: 300px;
+        background-color: transparent;
+        margin: 100px auto;
+        background-image: linear-gradient(transparent, tomato);
+        background-size: 200% 200%;
+        animation-name: color;
+        animation-duration: 1800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        clip-path: polygon(
+          53% 100%,
+          61% 93%,
+          68% 89%,
+          73% 85%,
+          78% 80%,
+          85% 74%,
+          93% 67%,
+          96% 62%,
+          99% 53%,
+          99% 43%,
+          99% 25%,
+          90% 17%,
+          75% 17%,
+          65% 23%,
+          59% 32%,
+          55% 40%,
+          53% 44%,
+          46% 38%,
+          43% 31%,
+          35% 23%,
+          26% 20%,
+          19% 18%,
+          7% 18%,
+          0% 26%,
+          0% 40%,
+          1% 52%,
+          7% 66%,
+          20% 79%,
+          31% 86%,
+          40% 94%
+        );
+      }
+
+      @keyframes color {
+        from {
+          /* background-image: linear-gradient(
+            to bottom,
+            transparent 10px,
+            tomato
+          ); */
+
+          background-position: 0% 0%;
+        }
+        to {
+          /* background-image: linear-gradient(
+            to bottom,
+            transparent 100px,
+            tomato
+          ); */
+          background-position: 0% 180%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

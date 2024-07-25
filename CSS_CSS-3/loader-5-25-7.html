@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        height: 300px;
+        width: 300px;
+        background-color: transparent;
+        margin: 100px auto;
+        background-image: repeating-linear-gradient(
+          lightgrey 30px,
+          white 30px,
+          #5e0cfb 40px
+        );
+        /* background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px); */
+        background-size: 200% 200%;
+        animation-name: co0lor;
+        animation-duration: 1800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+      }
+
+      @keyframes color {
+        from {
+          background-position: 0% 0%;
+        }
+        to {
+          background-position: 0% 180%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>
