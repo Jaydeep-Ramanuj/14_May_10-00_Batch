@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #f7c337, #f83c37);
+      }
+      .card {
+        max-width: 500px;
+        margin: 100px auto;
+        background-color: whitesmoke;
+        border-radius: 24px;
+        padding: 30px;
+        position: relative;
+      }
+      .content {
+        margin-left: 200px;
+      }
+      h5 {
+        color: grey;
+      }
+      h2 {
+        color: grey;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 24px;
+        color: white;
+        background-image: linear-gradient(to right, #f7c337, #f83c37);
+      }
+      .floating-card {
+        height: 200px;
+        width: 200px;
+        border-radius: 12px;
+        background-image: linear-gradient(45deg, #f7c337, #f83c37);
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: all 300ms;
+      }
+      .card:hover .floating-card {
+        left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="content">
+        <h5>Lorem ipsum dolor sit amet.</h5>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+          voluptatem.
+        </h5>
+        <a href="#">Read more</a>
+      </div>
+      <div class="floating-card"></div>
+    </div>
+  </body>
+</html>

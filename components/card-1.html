@@ -30,6 +30,7 @@
         transition: all 300ms;
         border-radius: 8px;
         padding: 12px;
+        position: relative;
       }
 
       .card img {
@@ -88,6 +89,28 @@
       .card:hover img {
         filter: brightness(100%);
       }
+      .offer {
+        padding: 5px 8px;
+        border-radius: 5px;
+        background-color: rgba(255, 99, 71, 0.563);
+        color: white;
+        width: fit-content;
+        font-size: 12px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 3;
+      }
+      .dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: chartreuse;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+      }
     </style>
   </head>
   <body>
@@ -110,6 +133,8 @@
         </p>
         <button>Read more</button>
       </div>
+      <div class="offer">20%off</div>
+      <div class="dot"></div>
     </div>
   </body>
 </html>
