@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: fit-content;
+        margin: 100px auto;
+        border: 1px solid;
+        border-radius: 12px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        clip-path: circle(5% at 0 50%);
+        transition: all 600ms;
+        /* clip-path: polygon(0% 0%, 0 50%, 50% 100%, 100% 50%, 100% 0); */
+
+        animation-name: round;
+        animation-duration: 3000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      /* .wrapper:hover .box {
+        clip-path: circle(150% at 0 50%);
+      } */
+
+      @keyframes round {
+        0%,
+        100% {
+          clip-path: circle(5% at 0 0%);
+        }
+        25% {
+          clip-path: circle(70% at 100% 0%);
+        }
+        50% {
+          clip-path: circle(100% at 100% 100%);
+        }
+        75% {
+          clip-path: circle(70% at 0% 100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

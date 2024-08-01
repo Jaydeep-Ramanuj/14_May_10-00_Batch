@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* background-color: #44b6c37b; */
+      /* background-color: #35729375; */
+      /* background-color: #379aab78; */
+
+      body {
+        overflow: hidden;
+      }
+      .wrapper {
+        height: 100vh;
+        width: 100vw;
+      }
+      .wave {
+        height: 300px;
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        animation-name: wave;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        /* animation-duration: 3000ms; */
+        /* animation-delay: var(--delay); */
+      }
+
+      .wave-1 {
+        animation-delay: 0ms;
+        animation-duration: 2000ms;
+      }
+      .wave-2 {
+        animation-delay: 1000ms;
+        animation-duration: 3000ms;
+      }
+      .wave-3 {
+        animation-delay: 1500ms;
+        animation-duration: 5000ms;
+      }
+      @keyframes wave {
+        from {
+          left: 0%;
+        }
+        to {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg
+        class="wave wave-1"
+        style="--delay: 0ms"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#35729375"
+          fill-opacity="1"
+          style="--delay: 1000ms"
+          d="M0,320L40,282.7C80,245,160,171,240,122.7C320,75,400,53,480,90.7C560,128,640,224,720,224C800,224,880,128,960,122.7C1040,117,1120,203,1200,234.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <svg
+        class="wave wave-2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#379aab78"
+          fill-opacity="1"
+          style="--delay: 1500ms"
+          d="M0,256L40,234.7C80,213,160,171,240,154.7C320,139,400,149,480,181.3C560,213,640,267,720,272C800,277,880,235,960,213.3C1040,192,1120,192,1200,170.7C1280,149,1360,107,1400,85.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <svg
+        class="wave wave-3"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#44b6c37b"
+          fill-opacity="1"
+          d="M0,288L40,245.3C80,203,160,117,240,74.7C320,32,400,32,480,74.7C560,117,640,203,720,240C800,277,880,267,960,240C1040,213,1120,171,1200,160C1280,149,1360,171,1400,181.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+  </body>
+</html>
