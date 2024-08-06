@@ -1,0 +1,10 @@
+@media screen and (min-width: 576px) {
+  :root {
+    --primary-padding: 0px 30px;
+    --section-gap: 50px;
+  }
+
+  #hero-section .content {
+    max-width: 80%;
+  }
+}

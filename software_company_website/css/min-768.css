@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+  :root {
+    --primary-padding: 0px 50px;
+    --section-gap: 50px;
+  }
+  #services-section .service-cards .service-card {
+    max-width: 350px;
+  }
+}

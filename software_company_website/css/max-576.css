@@ -1,0 +1,6 @@
+@media screen and (max-width: 576px) {
+  :root {
+    --primary-padding: 0px 20px;
+    --section-gap: 50px;
+  }
+}

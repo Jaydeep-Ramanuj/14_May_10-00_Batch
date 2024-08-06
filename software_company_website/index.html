@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/max-576.css" />
+    <link rel="stylesheet" href="css/min-576.css" />
+    <link rel="stylesheet" href="css/min-768.css" />
   </head>
   <body>
     <header>
@@ -25,14 +28,20 @@
         <img src="images/logo_Vector.png" alt="" />
         <span>TTS Developers</span>
       </div>
-      <nav>
-        <a href="#">About us</a>
-        <a href="#">Services</a>
-        <a href="#">Case Studies</a>
-        <a href="#">Blog</a>
-        <a href="#">How it Works</a>
-      </nav>
-      <button>Contact us</button>
+      <label for="toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" name="" id="toggle" />
+      <div class="wrapper">
+        <nav>
+          <a href="#">About us</a>
+          <a href="#">Services</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Blog</a>
+          <a href="#">How it Works</a>
+        </nav>
+        <button>Contact us</button>
+      </div>
     </header>
     <main>
       <!-- hero-section -->
