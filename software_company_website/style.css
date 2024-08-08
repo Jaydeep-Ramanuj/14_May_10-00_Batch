@@ -53,6 +53,10 @@
   left: calc(50% - 50px);
 }
 
+.fluid-img {
+  width: 100%;
+}
+
 /* header */
 
 header {
@@ -151,7 +155,6 @@ main {
 
 #hero-section img {
   max-width: 500px;
-  width: 100%;
 }
 
 #hero-section .content .btn {
@@ -239,10 +242,6 @@ main {
   flex-wrap: wrap-reverse;
 }
 
-#about-section > img {
-  /* height: 350px; */
-  width: 100%;
-}
 #about-section .content {
   margin-top: 30px;
 }
@@ -398,12 +397,6 @@ main {
   background-color: #fef4f3;
 }
 
-#case-studies-section .case-study img {
-  /* height: 300px; */
-  /* width: 500px; */
-  width: 100%;
-}
-
 #case-studies-section .case-study .text h3 {
   font-weight: 600;
   font-size: 22px;
@@ -506,11 +499,6 @@ main {
   color: var(--secondary-text-color);
 }
 
-#ways-section .way-of-working-card > img {
-  /* height: 300px; */
-  /* width: 300px; */
-  width: 100%;
-}
 #ways-section .way-of-working-card .content q::before {
   content: '';
   width: 3px;
@@ -734,12 +722,15 @@ main {
   font-size: 24px;
   color: var(--primary-text-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   border-radius: 24px;
 }
 
+#cta-section h2 {
+  text-align: center;
+}
 #cta-section .btn {
   padding: 10px 20px;
   border-radius: 8px;

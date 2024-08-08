@@ -1,0 +1,39 @@
+@media screen and (min-width: 992px) {
+  :root {
+    --primary-padding: 0px 100px;
+    --section-gap: 50px;
+  }
+  header .fa-solid {
+    display: none;
+  }
+  header .wrapper {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    align-items: center;
+  }
+  header .wrapper nav {
+    flex-direction: row;
+  }
+  .fluid-img {
+    width: auto;
+    margin: initial;
+  }
+
+  #about-section .content,
+  #case-studies-section .case-study-cards .case-study .text {
+    max-width: 50%;
+  }
+  #ways-section .ways-of-working-cards .way-of-working-card {
+    width: 100%;
+  }
+  #dev-approach-section {
+    padding: var(--primary-padding);
+  }
+
+  #tech-stack-section .tech-stack-imgs {
+    overflow: visible;
+    flex-wrap: wrap;
+  }
+}
