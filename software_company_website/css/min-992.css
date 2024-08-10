@@ -16,6 +16,14 @@
   header .wrapper nav {
     flex-direction: row;
   }
+
+  #hero-section .content {
+    max-width: 48%;
+  }
+  #hero-section .fluid-img {
+    max-width: 400px;
+  }
+
   .fluid-img {
     width: auto;
     margin: initial;
@@ -28,12 +36,23 @@
   #ways-section .ways-of-working-cards .way-of-working-card {
     width: 100%;
   }
-  #dev-approach-section {
-    padding: var(--primary-padding);
-  }
 
   #tech-stack-section .tech-stack-imgs {
     overflow: visible;
     flex-wrap: wrap;
+  }
+  #ways-section .ways-of-working-cards .way-of-working-card {
+    gap: 0px;
+  }
+
+  #ways-section .content {
+    max-width: 50%;
+  }
+  #ways-section .fluid-img {
+    width: 360px;
+  }
+
+  #dev-approach-section .approach-cards {
+    justify-content: space-around;
   }
 }

@@ -11,7 +11,7 @@
   }
 
   .fluid-img {
-    max-width: 500px;
+    max-width: 390px;
     margin: 0 auto;
   }
 
@@ -19,5 +19,8 @@
     width: 70%;
     margin: 0 auto;
     gap: 15px;
+  }
+  footer .top-footer {
+    justify-content: space-between;
   }
 }

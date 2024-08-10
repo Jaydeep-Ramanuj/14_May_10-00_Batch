@@ -1,0 +1,6 @@
+@media screen and (min-width: 1200px) {
+  #case-studies-section .case-study-cards .case-study,
+  #ways-section .ways-of-working-cards .way-of-working-card {
+    padding: 0 10%;
+  }
+}

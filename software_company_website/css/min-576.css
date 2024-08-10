@@ -7,4 +7,7 @@
   #hero-section .content {
     max-width: 80%;
   }
+  footer .top-footer {
+    justify-content: space-around;
+  }
 }

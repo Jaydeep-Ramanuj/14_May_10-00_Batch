@@ -134,6 +134,7 @@ main {
   align-items: center;
   padding: var(--primary-padding);
   flex-wrap: wrap-reverse;
+  margin-top: var(--section-gap);
 }
 
 #hero-section .content h2 {
@@ -521,7 +522,7 @@ main {
 
 #dev-approach-section {
   background-color: var(--secondary-bg-color);
-  padding: var(--primary-bg-color);
+  padding: var(--primary-padding);
   margin-top: var(--section-gap);
 }
 
@@ -737,6 +738,7 @@ main {
   height: fit-content;
   color: whitesmoke;
   font-weight: 600;
+  text-align: center;
   background-image: linear-gradient(45deg, #ed6a61 60%, #f8c552);
 }
 
@@ -749,9 +751,14 @@ footer {
 
 footer .top-footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   color: var(--secondary-text-color);
+  gap: 20px;
+}
+footer .top-footer .company-info {
+  min-width: 300px;
 }
 
 footer .top-footer .company-info {
