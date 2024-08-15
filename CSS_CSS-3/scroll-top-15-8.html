@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        /* scroll-behavior: ; */
+      }
+      .spacer {
+        height: 1000px;
+      }
+      .s1 {
+        margin-top: 300px;
+        background-color: tomato;
+      }
+      .s2 {
+        background-color: teal;
+      }
+
+      .box {
+        height: 300px;
+        width: 50%;
+        border-radius: 12px;
+        display: flex;
+        border: 1px solid black;
+        margin: 50px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        aspect-ratio: 1/1;
+        scroll-snap-type: both proximity;
+        white-space: nowrap;
+      }
+      .item {
+        height: 100%;
+        min-width: 100%;
+        background-color: teal;
+        /* display: inline-block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: inherit;
+        scroll-snap-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spacer s1" id="top"></div>
+    <div class="spacer s2"></div>
+    <a href="#top">Go to top</a>
+
+    <div class="box">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        scroll-snap-type: both mandatory;
+        width: 50%;
+        margin: 30px auto;
+        white-space: nowrap;
+        aspect-ratio: 1/1;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        border: solid black 2px;
+      }
+
+      .green {
+        background-color: lightgreen;
+      }
+      .pink {
+        background-color: lightpink;
+      }
+      .blue {
+        background-color: lightblue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .grey {
+        background-color: lightgray;
+      }
+
+      #container > div {
+        display: inline-block;
+        height: 80%;
+        border-radius: 10%;
+        aspect-ratio: 1/1;
+        margin: 5px;
+        scroll-snap-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS scroll-snap-type property, in both x- and y-direction.</h3>
+    <p>
+      Use scroll wheel or drag the scrollbar inside the container box, let go,
+      and see how the scroll-snap-type is in both directions.
+    </p>
+    <p>
+      Try also to click on a box, then navigate through the boxes with the arrow
+      keys.
+    </p>
+
+    <div id="container">
+      <div class="green"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="grey"></div>
+      <div class="pink"></div>
+      <br />
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="grey"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <br />
+      <div class="green"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="grey"></div>
+      <div class="pink"></div>
+      <br />
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="grey"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <br />
+      <div class="grey"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <div class="pink"></div>
+      <br />
+      <div class="green"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="grey"></div>
+    </div>
+  </body>
+</html> -->
